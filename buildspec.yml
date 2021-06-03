@@ -3,12 +3,15 @@ version: 0.2
 env:
   parameter-store:
     rails_master_key: rails_master_key
+    docker_hub_password: docker_hub_password
 
 phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+      - echo Logging in to Docker Hub...
+      - echo $docker_hub_password | docker login -u tynmarket --password-stdin
   build:
     commands:
       - echo Build started on `date`
