@@ -280,7 +280,7 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (1.7.0)
       parser (>= 3.0.1.1)
-    rubocop-rspec (1.41.0)
+    rubocop-rspec (1.39.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
@@ -371,7 +371,7 @@ DEPENDENCIES
   rspec-rails
   rspec_junit_formatter
   rubocop (= 0.84.0)
-  rubocop-rspec (~> 1)
+  rubocop-rspec (= 1.39.0)
   sass-rails
   seed-fu
   settingslogic
