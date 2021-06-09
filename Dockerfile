@@ -24,6 +24,7 @@ RUN apk upgrade --no-cache && \
 
 COPY Gemfile Gemfile.lock yarn.lock /app/
 
+# TODO: bundle config set --local対応
 RUN apk add --update --no-cache --virtual=build-dependencies \
       build-base \
       curl \
