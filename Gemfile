@@ -17,7 +17,7 @@ gem 'pry-byebug'
 gem 'pry-stack_explorer'
 gem 'puma'
 gem 'rails', '~> 6.0.0'
-gem 'rubocop', require: false
+gem 'rubocop', '~>0.9', require: false
 gem 'sass-rails'
 gem 'seed-fu'
 gem 'settingslogic'
