@@ -270,12 +270,13 @@ GEM
     rspec-support (3.10.2)
     rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
-    rubocop (0.84.0)
+    rubocop (0.93.1)
       parallel (~> 1.10)
-      parser (>= 2.7.0.1)
+      parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8)
       rexml
-      rubocop-ast (>= 0.0.3)
+      rubocop-ast (>= 0.6.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (1.7.0)
@@ -370,8 +371,8 @@ DEPENDENCIES
   rails (~> 6.0.0)
   rspec-rails
   rspec_junit_formatter
-  rubocop (= 0.84.0)
-  rubocop-rspec (= 1.39.0)
+  rubocop (~> 0.9)
+  rubocop-rspec
   sass-rails
   seed-fu
   settingslogic
