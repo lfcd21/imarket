@@ -13,6 +13,10 @@
     font-size: $font-size-small;
     margin-bottom: 5px;
 
+    &.table-disclosure:not(:nth-child(1)) {
+      border-top: 0;
+    }
+
     & > thead {
       & > tr > th {
         &.w_release   { width: 5%;    }
