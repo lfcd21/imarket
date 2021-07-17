@@ -19,9 +19,7 @@ RUN apk upgrade --no-cache && \
     mkdir -p /app/tmp/cache && \
     mkdir -p /app/tmp/pids && \
     mkdir -p /app/tmp/sockets && \
-    mkdir -p /app/log && \
-    [ ! -e /run/nginx ] && \
-    mkdir -p /run/nginx
+    mkdir -p /app/log
 
 COPY Gemfile Gemfile.lock yarn.lock /app/
 
