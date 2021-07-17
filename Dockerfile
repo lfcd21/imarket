@@ -1,6 +1,6 @@
 # docker build -t tynmarket/imarket --build-arg rails_master_key=$RAILS_MASTER_KEY_IMARKET .
 
-FROM ruby:2.7-alpine
+FROM ruby:2.7.4-alpine3.13
 
 WORKDIR /app
 
