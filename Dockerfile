@@ -1,6 +1,6 @@
 # docker build -t tynmarket/imarket --build-arg rails_master_key=$RAILS_MASTER_KEY_IMARKET .
 
-FROM ruby:2.7-alpine
+FROM ruby:2.7.4-alpine3.13
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ RUN apk upgrade --no-cache && \
     mkdir -p /app/tmp/pids && \
     mkdir -p /app/tmp/sockets && \
     mkdir -p /app/log && \
-    mkdir /run/nginx
+    [ -e /run/nginx ] || mkdir -p /run/nginx
 
 COPY Gemfile Gemfile.lock yarn.lock /app/
 
