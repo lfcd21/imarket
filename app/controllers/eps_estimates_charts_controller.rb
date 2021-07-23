@@ -17,12 +17,6 @@ class EpsEstimatesChartsController < ApplicationController
   def chart_n225
     @eps_estimates_n225 = @eps_estimates.pluck(:date, :current_year_eps)
     @dates = @eps_estimates_n225.map(&:first)
-    @stock_prices = StockPrice
-                    .daily
-                    .where(code: Stock.code_n225)
-                    .where("date >= ?", @dates.first)
-                    .order(:date)
-                    .pluck(:close)
 
     @eps_estimates_n225 = @eps_estimates_n225.map(&:last)
 

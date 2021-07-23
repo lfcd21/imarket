@@ -55,12 +55,6 @@ function renderEpsChart() {
     document.querySelector('#n225-chart')
   );
 
-  // iMarket算出
-  ReactDOM.render(
-    <EpsChart code={'998407-r'} />,
-    document.querySelector('#n225-r-chart')
-  );
-
   // ダウ平均
   ReactDOM.render(
     <EpsChart code={'^DJI'} />,
