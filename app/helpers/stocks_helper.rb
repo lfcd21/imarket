@@ -26,7 +26,7 @@ module StocksHelper
   end
 
   def show_summary?(release_date)
-    release_date.year >= 2016
+    release_date.year >= 2017
   end
 
   def thead_summary
