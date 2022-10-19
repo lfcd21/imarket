@@ -172,7 +172,6 @@ GEM
       actionpack (>= 3.2.0, < 6.2)
     method_source (1.0.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.3)
     minitest (5.14.4)
     msgpack (1.4.2)
     multi_json (1.15.0)
@@ -181,12 +180,11 @@ GEM
     mysql2 (0.5.3)
     newrelic_rpm (7.1.0)
     nio4r (2.5.7)
-    nokogiri (1.11.7)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.13.9-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.11.7-arm64-darwin)
+    nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.11.7-x86_64-linux)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     oauth (0.5.6)
     oauth2 (1.4.7)
@@ -212,7 +210,7 @@ GEM
     public_suffix (4.0.6)
     puma (5.3.2)
       nio4r (~> 2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-proxy (0.7.0)
       rack
@@ -343,6 +341,7 @@ GEM
 PLATFORMS
   aarch64-linux-musl
   arm64-darwin-20
+  x86_64-linux
   x86_64-linux-musl
 
 DEPENDENCIES
