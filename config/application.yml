@@ -1,6 +1,8 @@
 defaults: &defaults
   ga:
     tracking_id:
+  ga4:
+    tracking_id:
   imarket:
     api_key: <%= ENV["IMARKET_API_KEY"] %>
 
@@ -18,3 +20,5 @@ production:
   <<: *defaults
   ga:
     tracking_id: UA-46662880-1
+  ga4:
+    tracking_id: G-VDLR1TK4YY
